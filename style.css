@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/**/
+
+@keyframes slide {
+  0% {
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2018/12/Ad-Revenue-Backgrounds.jpg');
+  }
+  50% {
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2018/11/Technologic-Workspace-Backgrounds.jpg');
+  }
+  75% {
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2018/11/Online-Working-Backgrounds.jpg');
+  }
+  100% {
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2018/11/Computer-Screen-Backgrounds.jpg');
+  }
+}
+
+/**/
+
+.inner-width {
+  width: 100%;
+  height: 8vh;
+  background: rgba(116, 147, 231, 0.2);
+  color: rgb(25, 144, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.logo img {
+  height: 50px;
+  padding-left: 50px;
+}
+
+.navigation-menu {
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  padding-right: 30px;
+}
+
+.navigation-menu a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgb(233, 44, 240);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s linear;
+}
+
+.navigation-menu a:hover {
+  background: #fff;
+  color: #2f3640;
+  transform: scale(1.1);
+}
+
+.navigation-menu i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.menu-toggle-btn {
+  float: right;
+  height: 90px;
+  line-height: 90px !important;
+  color: #fff;
+  font-size: 26px;
+  display: none !important;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+  color: #48dbfb;
+}
+
+section h1 span {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  color: #2c3e50;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+}
+
+section .btnone {
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background: 00894;
+  color: hsl(300, 67%, 88%);
+}
+
+section .btntwo {
+  background: #00b894;
+  color: white;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: rgb(177, 56, 56);
+}
+
+.change_content:after {
+  content: '';
+  animation: changetext 2s infinite linear;
+  color: hsl(300, 67%, 88%);
+}
+
+@keyframes changetext {
+  0% {
+    content: "P";
+  }
+  20% {
+    content: "R";
+  }
+  35% {
+    content: "S";
+  }
+  60% {
+    content: "PRS";
+  }
+  80% {
+    content: "PRS-Company";
+  }
+  100% {
+    content: "...............";
+  }
+}
+
+.footer-container {
+  width: 100%;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  background-color: hsl(300, 67%, 88%);
+}
+
+.logo {
+  width: 100px;
+}
+
+.right-col h1 {
+  font-size: 26px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.txtb {
+  flex: 1;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #293043;
+  background: rgb(248, 246, 246);
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  color: hsl(0, 56%, 2%);
+  background: #57fef6;
+  border: none;
+  font-weight: 300;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
